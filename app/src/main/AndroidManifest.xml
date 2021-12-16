@@ -10,7 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MMAPromotionsNews">
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.activities.PromoNavigationActivity"
+            android:exported="true"
+            android:label="@string/title_activity_promo_navigation"
+            android:theme="@style/Theme.MMAPromotionsNews.NoActionBar" />
+        <activity
+            android:name=".presentation.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
