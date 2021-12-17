@@ -2,6 +2,7 @@ package com.example.mmapromotionsnews.presentation.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -29,7 +30,6 @@ class MainActivity : AppCompatActivity() {
         viewModel.promotionList.observe(this, { it ->
             adapter = PromotionAdapter(it as ArrayList<PromotionItem>)
             rvPromotion.adapter = adapter
-
             adapter.onPromotionClickListener = {
                 val intent = Intent(this@MainActivity, PromoNavigationActivity::class.java)
                 val selectedPromotion = it.promotion

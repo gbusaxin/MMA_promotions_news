@@ -1,5 +1,6 @@
 package com.example.mmapromotionsnews.presentation.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,8 @@ class PromoNavigationActivity : AppCompatActivity() {
         binding = ActivityPromoNavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        actionBar?.title = Intent().getStringExtra("selectedPromotion")
+
         setSupportActionBar(binding.appBarPromoNavigation.toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -34,7 +37,7 @@ class PromoNavigationActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_news
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

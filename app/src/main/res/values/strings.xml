@@ -12,4 +12,11 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="about_mma">Сме́шанные боевы́е иску́сства — боевые искусства, представляющие собой сочетание множества техник, школ и направлений единоборств. ММА являются полноконтактным боем с применением ударной техники и борьбы как в стойке, так и на полу.</string>
+    <string name="mian_info">Основная информация</string>
+    <string name="results">Результаты</string>
+    <string name="nearest_fights">Ближайшие бои</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="news">Новости из мира ММА</string>
+    <string name="p4p">P4P</string>
 </resources>

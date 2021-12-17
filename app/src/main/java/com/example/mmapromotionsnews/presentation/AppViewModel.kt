@@ -23,7 +23,7 @@ class AppViewModel(application: Application):AndroidViewModel(application) {
 
     init {
         viewModelScope.launch{
-            loadPromotionListUseCase
+            loadPromotionListUseCase()
         }
     }
 }

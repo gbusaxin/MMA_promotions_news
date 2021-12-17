@@ -28,6 +28,7 @@
         android:background="@drawable/common_shape_for_items"
         android:padding="3dp"
         android:text="TextView"
+        android:gravity="center_horizontal"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
